@@ -1,3 +1,174 @@
+/* Animated floating background gradient */
+.animated-bg-gradient {
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    z-index: 0;
+    pointer-events: none;
+    background: radial-gradient(circle at 20% 30%, var(--brand) 0%, transparent 60%),
+                            radial-gradient(circle at 80% 70%, var(--brand-muted) 0%, transparent 60%),
+                            linear-gradient(120deg, var(--panel) 0%, var(--elev) 100%);
+    animation: bg-move 12s ease-in-out infinite alternate;
+    opacity: 0.18;
+}
+@keyframes bg-move {
+    0% { background-position: 20% 30%, 80% 70%, 0% 0%; }
+    100% { background-position: 60% 10%, 40% 90%, 100% 100%; }
+}
+
+/* Section reveal animation */
+.reveal-section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s cubic-bezier(.2,.6,.2,1), transform 0.7s cubic-bezier(.2,.6,.2,1);
+}
+.reveal-section.visible {
+    opacity: 1;
+    transform: none;
+}
+
+/* Button ripple/shine effect */
+.btn, .github-btn {
+    position: relative;
+    overflow: hidden;
+}
+.btn::after, .github-btn::after {
+    content: '';
+    position: absolute;
+    left: 50%; top: 50%;
+    width: 0; height: 0;
+    background: rgba(255,255,255,0.35);
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+    transition: width 0.4s cubic-bezier(.2,.6,.2,1), height 0.4s cubic-bezier(.2,.6,.2,1), opacity 0.4s;
+    opacity: 0;
+    pointer-events: none;
+}
+.btn:active::after, .github-btn:active::after {
+    width: 200%; height: 200%; opacity: 1;
+    transition: 0s;
+}
+.btn:focus-visible::after, .github-btn:focus-visible::after {
+    width: 200%; height: 200%; opacity: 0.7;
+}
+
+/* Featured badge for top resource */
+.featured-badge {
+    display: inline-block;
+    background: linear-gradient(90deg, #ffb300, #ff8800);
+    color: #0A0A0A;
+    font-size: 0.82rem;
+    font-weight: 700;
+    border-radius: 8px;
+    padding: 0.18em 0.7em;
+    margin-bottom: 0.5em;
+    margin-right: 0.5em;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(255,187,0,0.10);
+    vertical-align: middle;
+    animation: badge-pop 1.2s cubic-bezier(.2,.6,.2,1);
+}
+@keyframes badge-pop {
+    0% { transform: scale(0.7); opacity: 0; }
+    60% { transform: scale(1.15); opacity: 1; }
+    100% { transform: scale(1); opacity: 1; }
+}
+/* Cfx.re logo icon styling to match other feature icons */
+.features-container .cfx-icon {
+    width: 1.15em;
+    height: 1.15em;
+    display: inline-block;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: none;
+    transition: filter 0.5s;
+    vertical-align: middle;
+}
+.features-container .feature:hover .cfx-icon,
+.features-container .feature:focus .cfx-icon {
+    filter: drop-shadow(0 0 6px #ff8800) brightness(1.15);
+}
+/* CFX profile icon (user-circle) orange color */
+.features-container .fa-user-circle {
+    color: #ff8800;
+}
+/* Social icon brand colors in features section */
+.features-container .fa-github {
+    color: #333;
+}
+.features-container .fa-discord {
+    color: #5865F2;
+}
+.features-container .fa-youtube {
+    color: #FF0000;
+}
+
+/* On hover/focus, brighten the icon and add a glow */
+.features-container .feature:hover .fa-github,
+.features-container .feature:focus .fa-github {
+    color: #24292f;
+    filter: drop-shadow(0 0 6px #3333);
+}
+.features-container .feature:hover .fa-discord,
+.features-container .feature:focus .fa-discord {
+    color: #7289da;
+    filter: drop-shadow(0 0 6px #5865F2);
+}
+.features-container .feature:hover .fa-user-circle,
+.features-container .feature:focus .fa-user-circle {
+    color: #ffaa33;
+    filter: drop-shadow(0 0 6px #ff8800);
+}
+
+/* 1. Animated gradient text for header */
+.jumbotron-header {
+    /* Remove gradient from header, move to .jumbotron-gradient-text */
+}
+
+.jumbotron-gradient-text {
+    background: linear-gradient(90deg, var(--brand), var(--brand-muted), var(--brand-25), var(--brand));
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    animation: gradient-move 4s ease-in-out infinite;
+}
+
+@keyframes gradient-move {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* 2. Animated glowing border on resource cards */
+.resource-card {
+    position: relative;
+    box-shadow: 0 2px 8px rgba(10,15,28,0.15);
+    border: 1.5px solid var(--brand-25);
+    transition: box-shadow 0.2s, border-color 0.2s;
+}
+.resource-card:hover, .resource-card:focus {
+    border-color: #00ffae;
+    box-shadow: 0 0 16px 2px #00ffae80, 0 8px 24px rgba(0,0,0,0.25);
+    z-index: 2;
+}
+
+/* 3. Animated icon color transitions */
+.resource-card i, .features-container i, .jumbotron-header i {
+    transition: color 0.5s, filter 0.5s;
+}
+.resource-card:hover i, .resource-card:focus i {
+    color: #00ffae;
+    filter: drop-shadow(0 0 6px #00ffae);
+}
+.features-container .feature:hover i, .features-container .feature:focus i {
+    color: #ffb300;
+    filter: drop-shadow(0 0 6px #ffb300);
+}
+.jumbotron-header:hover i, .jumbotron-header:focus i {
+    color: #ffb300;
+    filter: drop-shadow(0 0 6px #ffb300);
+}
 /* Make the jumbotron code icon green */
 .jumbotron-header .fa-code {
     color: #22C55E;

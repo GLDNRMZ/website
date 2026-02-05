@@ -1,3 +1,18 @@
+// Section reveal animation on scroll
+document.addEventListener('DOMContentLoaded', function() {
+	const sections = document.querySelectorAll('.main-container, .features-container, .quotes-container, .resources-grid, .resource-card');
+	sections.forEach(sec => sec.classList.add('reveal-section'));
+	function revealOnScroll() {
+		sections.forEach(sec => {
+			const rect = sec.getBoundingClientRect();
+			if (rect.top < window.innerHeight - 60) {
+				sec.classList.add('visible');
+			}
+		});
+	}
+	window.addEventListener('scroll', revealOnScroll);
+	revealOnScroll();
+});
 // Animated reveal for sections/cards
 const revealEls = document.querySelectorAll('section, section h2 + div > div');
 revealEls.forEach(el => {
