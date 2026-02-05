@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap v4.1.3 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="GLDN RMZ: FiveM scripting and resources.">
+    <meta name="keywords" content="fivem, scripts, development, modding, qbcore, server, open-source, roleplay">
+    <title>GLDN RMZ Scripts</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-32x32.png">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <style>
+        body { font-family: 'Montserrat', sans-serif; background: #f8f9fa; }
+        .navbar { background: #232946; }
+        .navbar-brand { font-weight: bold; letter-spacing: 2px; }
+        .hero-section { background: linear-gradient(120deg, #232946 70%, #eebbc3 100%); color: #fff; padding: 60px 0 40px 0; position: relative; }
+        .hero-section h1 { font-size: 3rem; font-weight: 700; }
+        .hero-section .btn-main { background: #eebbc3; color: #232946; border: none; font-weight: 600; }
+        .info-section { background: #fff; padding: 40px 0; }
+        .info-section h2 { color: #232946; font-weight: 700; }
+        .feature-card { background: #f3f3f3; border-radius: 10px; padding: 24px; margin-bottom: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+        .feature-card h3 { color: #232946; font-size: 1.3rem; font-weight: 600; }
+        .feature-card .btn { background: #232946; color: #fff; border: none; }
+        .feature-card .btn:hover { background: #eebbc3; color: #232946; }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">GLDN RMZ</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="https://github.com/gldnrmz">GitHub</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://discord.com/invite/7YHJ7774jA">Discord</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/@gldnrmz">YouTube</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">RESOURCES</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="https://github.com/gldnrmz/gldn-hints">Hints</a>
+                        <a class="dropdown-item" href="https://github.com/gldnrmz/gldn-blips">Blips</a>
+                        <a class="dropdown-item" href="https://github.com/gldnrmz/gldn-speed">Speed Tools</a>
+                        <a class="dropdown-item" href="https://github.com/gldnrmz/gldn-vehicledisplay">Vehicle Display</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1>GLDN RMZ SCRIPTS</h1>
+            <hr style="border-top: 3px solid #eebbc3; width: 80px; margin: 24px auto;">
+            <p class="lead">Fast • Flexible • Open Source<br><strong>Enhance Your FiveM Experience</strong></p>
+            <a class="btn btn-main btn-lg mt-3" href="https://cfx.re/join/r4q7b7">VIEW SHOWCASE</a>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h2>Framework Support</h2>
+                    <p>Currently, scripts are built for QBCore and QBox, with plans to expand to other frameworks in the future. Stay tuned for more compatibility as the project grows!</p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h2>Open & Free</h2>
+                    <p>All scripts are open-source and free to use. Contributions and feedback are welcome. Join the community and help shape the future of FiveM scripting!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="container py-5">
+        <div class="row">
+            <div class="col-12 text-center mb-4">
+                <h2 class="text-uppercase">Discover More</h2>
+                <hr style="border-top: 2px solid #232946; width: 60px; margin: 16px auto;">
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card text-center">
+                    <h3><i class="fab fa-github fa-lg mb-2"></i> GitHub Releases</h3>
+                    <p>Browse and download the latest open-source scripts. Report issues or request features on GitHub.</p>
+                    <a class="btn btn-sm mt-2" href="https://github.com/gldnrmz">Explore</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card text-center">
+                    <h3><i class="fab fa-discord fa-lg mb-2"></i> Community Discord</h3>
+                    <p>Join the Discord server for support, updates, and to connect with other FiveM enthusiasts.</p>
+                    <a class="btn btn-sm mt-2" href="https://discord.com/invite/7YHJ7774jA">Join</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card text-center">
+                    <h3><i class="fab fa-youtube fa-lg mb-2"></i> YouTube Channel</h3>
+                    <p>Watch script showcases, tutorials, and updates. Subscribe for the latest content.</p>
+                    <a class="btn btn-sm mt-2" href="https://www.youtube.com/@gldnrmz">Subscribe</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/4b906ccd40.js"></script>
+</body>
+</html>

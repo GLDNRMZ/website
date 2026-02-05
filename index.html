@@ -13,46 +13,182 @@
     <nav class="navbar" role="navigation" aria-label="Main Navigation">
         <div class="navbar-logo">GLDNRMZ</div>
         <ul class="navbar-links">
-            <li class="dropdown">
-                <a href="#" class="dropbtn" tabindex="0" aria-haspopup="true" aria-expanded="false">Home</a>
-                <div class="dropdown-content" role="menu">
-                    <a href="#about" role="menuitem">About</a>
-                    <a href="#contact" role="menuitem">Contact</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a href="#" class="dropbtn" tabindex="0" aria-haspopup="true" aria-expanded="false">Scripts</a>
-                <div class="dropdown-content" role="menu">
-                    <a href="#script1" role="menuitem">Script 1</a>
-                    <a href="#script2" role="menuitem">Script 2</a>
-                    <a href="#script3" role="menuitem">Script 3</a>
-                </div>
-            </li>
-            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#hero">Home</a></li>
+            <!-- Resources dropdown removed -->
+            <li><a href="https://github.com/gldnrmz">GitHub</a></li>
+            <li><a href="https://discord.com/invite/7YHJ7774jA">Discord</a></li>
+            <li><a href="https://www.youtube.com/@gldnrmz">YouTube</a></li>
         </ul>
     </nav>
-    <main>
-        <section id="about">
-            <h1>Welcome to GLDNRMZ</h1>
-            <p>Your source for FiveM scripts and resources.</p>
-        </section>
-        <section id="scripts">
-            <h2>Available Scripts</h2>
-            <ul class="script-list">
-                <li id="script1"><a href="#">Script 1 Download</a></li>
-                <li id="script2"><a href="#">Script 2 Download</a></li>
-                <li id="script3"><a href="#">Script 3 Download</a></li>
-            </ul>
-        </section>
-        <section id="faq">
-            <h2>FAQ</h2>
-            <p style="color: var(--text-secondary);">Frequently asked questions will go here.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:info@gldnrmz.com" style="color: var(--accent);">info@gldnrmz.com</a></p>
-        </section>
-    </main>
+
+    <!-- Jumbotron / Callout Section -->
+    <div class="container-fluid callout-container" style="padding:0;">
+        <div style="position:relative; max-width:900px; margin:2rem auto 1.5rem auto; border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow);">
+            <div class="opaque-overlay" style="position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(120deg, var(--brand-25) 60%, var(--panel) 100%);z-index:1;">&nbsp;</div>
+            <section class="callout jumbotron text-center" style="position:relative;z-index:2;padding:3rem 2rem 2rem 2rem;background:transparent;">
+                <img src="logo.png" alt="GLDNRMZ Logo" style="display:block;margin:0 auto 1.5rem auto;max-width:160px;width:60vw;height:auto;filter:drop-shadow(0 2px 8px rgba(0,0,0,0.25));">
+                <h1 class="jumbotron-header" style="color:var(--brand);font-size:2.8rem;font-weight:700;">GLDNRMZ SCRIPTS</h1>
+                <hr class="block-divider block-divider--brand" style="border-top:3px solid var(--brand);width:80px;margin:24px auto;">
+                <p class="lead" style="font-size:1.2rem;color:var(--muted);">Lightweight • Configurable • Open‑Source |
+                    <span class="d-inline d-sm-none"><br></span>
+                    <strong style="color:var(--brand-muted);">Scripts That Just Work</strong></p>
+                <a class="btn btn-lg btn--cta" href="https://cfx.re/join/r4q7b7" style="margin-top:1.5rem;padding:0.9rem 2.2rem;background:var(--brand);color:#0A0A0A;border-radius:var(--radius);font-weight:700;font-size:1.1rem;text-decoration:none;transition:background var(--fast),color var(--fast);">SHOWCASE</a>
+            </section>
+        </div>
+    </div>
+
+    <!-- Information Section -->
+    <div class="container-wrapper" style="max-width:900px;margin:0 auto 2rem auto;">
+        <div class="container quotes-container content-container" style="background:var(--panel);border-radius:var(--radius);box-shadow:var(--shadow);padding:2rem;">
+            <section class="quotes">
+                <div class="row" style="display:flex;flex-wrap:wrap;">
+                    <div class="col-12 page-header" style="width:100%;">
+                        <h2 class="text-uppercase" style="color:var(--brand);font-weight:700;">INFORMATION:</h2>
+                        <hr class="block-divider block-divider--short" style="border-top:2px solid var(--brand);width:60px;margin:16px 0;">
+                    </div>
+                </div>
+                <div class="row" style="display:flex;flex-wrap:wrap;gap:2rem;">
+                    <div class="col-12 col-md-6" style="flex:1 1 300px;min-width:260px;">
+                        <div class="media" style="background:var(--elev);border-radius:var(--radius);padding:1.2rem;box-shadow:0 2px 8px rgba(10,15,28,0.15);">
+                            <div class="media-body">
+                                <blockquote class="blockquote" style="margin:0;">
+                                    <p><b>- Do you only make scripts for QBCore/QBox?</b></p>
+                                    <p>Yes, currently I only make scripts for QBCore and QBox due to only experimenting with those frameworks. However I do want to expand into other frameworks for those who don't want use the QBCore or QBox framework. This will be something I'll get around to at some point but at the moment I'm continuing with QBCore and QBox till I'm confident enough to tackle another framework.</p>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6" style="flex:1 1 300px;min-width:260px;">
+                        <div class="media" style="background:var(--elev);border-radius:var(--radius);padding:1.2rem;box-shadow:0 2px 8px rgba(10,15,28,0.15);">
+                            <div class="media-body">
+                                <blockquote class="blockquote" style="margin:0;">
+                                    <p><b>- Are all your scripts free?</b></p>
+                                    <p>Yes, currently all scripts I'm making are completely free and open-source. I'm in my experimenting phase so everything I make is just me learning new things. I do plan to make scripts to sell but that's not for a while now. When I'm confident enough to make bigger and better scripts that's when I'll start. For now script development is just a hobby I do in my spare time.</p>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="container-wrapper container-wrapper--brand" style="max-width:900px;margin:0 auto 2rem auto;">
+        <div class="container features-container content-container" style="padding:0;">
+            <section class="features">
+                <div class="row" style="display:flex;flex-wrap:wrap;">
+                    <div class="col-12 page-header" style="width:100%;">
+                        <h2 class="text-uppercase" style="color:var(--brand);font-weight:700;"><b>Check out more from GLDNRMZ:</b></h2>
+                        <hr class="block-divider block-divider--short block-divider--brand" style="border-top:2px solid var(--brand);width:60px;margin:16px 0;">
+                    </div>
+                </div>
+                <div class="row" style="display:flex;flex-wrap:wrap;gap:2rem;justify-content:space-between;">
+                    <div class="col-12 col-md-6 col-lg-4" style="flex:1 1 260px;min-width:220px;">
+                        <div class="feature" style="background:var(--panel);border-radius:var(--radius);box-shadow:var(--shadow);padding:1.5rem;text-align:center;margin-bottom:1rem;">
+                            <h3 style="color:var(--brand);font-size:1.2rem;font-weight:600;"><i class="fab fa-github d-none d-sm-block"></i><b> GitHub Releases</b></h3>
+                            <p style="color:var(--muted);">Browse and download the latest open-source scripts. Report issues or request features on GitHub.</p>
+                            <p><a class="btn btn-sm btn-light" href="https://github.com/gldnrmz" style="background:var(--brand);color:#0A0A0A;border-radius:var(--radius);font-weight:600;text-decoration:none;">Click Here</a></p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4" style="flex:1 1 260px;min-width:220px;">
+                        <div class="feature" style="background:var(--panel);border-radius:var(--radius);box-shadow:var(--shadow);padding:1.5rem;text-align:center;margin-bottom:1rem;">
+                            <h3 style="color:var(--brand);font-size:1.2rem;font-weight:600;"><i class="fab fa-discord d-none d-sm-block"></i><b> Community Discord</b></h3>
+                            <p style="color:var(--muted);">Join the Discord server for support, updates, and to connect with other FiveM enthusiasts.</p>
+                            <p><a class="btn btn-sm btn-light" href="https://discord.com/invite/7YHJ7774jA" style="background:var(--brand);color:#0A0A0A;border-radius:var(--radius);font-weight:600;text-decoration:none;">Click Here</a></p>
+                        </div>
+                    </div>
+                    <div class="col-12 d-md-none d-lg-block col-lg-4" style="flex:1 1 260px;min-width:220px;">
+                        <div class="feature" style="background:var(--panel);border-radius:var(--radius);box-shadow:var(--shadow);padding:1.5rem;text-align:center;margin-bottom:1rem;">
+                            <h3 style="color:var(--brand);font-size:1.2rem;font-weight:600;"><i class="fab fa-youtube d-none d-sm-block"></i><b> YouTube Channel</b></h3>
+                            <p style="color:var(--muted);">Watch script showcases, tutorials, and updates. Subscribe for the latest content.</p>
+                            <p><a class="btn btn-sm btn-light" href="https://www.youtube.com/@gldnrmz" style="background:var(--brand);color:#0A0A0A;border-radius:var(--radius);font-weight:600;text-decoration:none;">Click Here</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Resources Section -->
+    <section style="max-width: 900px; margin: 0 auto 2rem auto; background: var(--panel); border-radius: var(--radius); box-shadow: var(--shadow); padding: 2rem;">
+        <h2>Featured Resources</h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: space-between;">
+            <div style="flex: 1 1 200px; min-width: 200px; background: var(--elev); border-radius: var(--radius); box-shadow: 0 2px 8px rgba(10,15,28,0.15); padding: 1.2rem; margin-bottom: 1rem;">
+                <h3 style="color: var(--brand); font-size: 1.1rem; font-weight: 600;">gldnrmz-aidoc</h3>
+                <p style="color: var(--muted);">Call an AI-Medic to revive you if no EMS is on-duty</p>
+                <a href="https://github.com/GLDNRMZ/gldnrmz-aidoc" style="color: var(--brand); text-decoration: underline; font-weight: 600;">View on GitHub</a>
+            </div>
+            <div style="flex: 1 1 200px; min-width: 200px; background: var(--elev); border-radius: var(--radius); box-shadow: 0 2px 8px rgba(10,15,28,0.15); padding: 1.2rem; margin-bottom: 1rem;">
+                <h3 style="color: var(--brand); font-size: 1.1rem; font-weight: 600;">gldnrmz-buyers</h3>
+                <p style="color: var(--muted);">Advanced item buyers.</p>
+                <a href="https://github.com/GLDNRMZ/gldnrmz-buyers" style="color: var(--brand); text-decoration: underline; font-weight: 600;">View on GitHub</a>
+            </div>
+            <div style="flex: 1 1 200px; min-width: 200px; background: var(--elev); border-radius: var(--radius); box-shadow: 0 2px 8px rgba(10,15,28,0.15); padding: 1.2rem; margin-bottom: 1rem;">
+                <h3 style="color: var(--brand); font-size: 1.1rem; font-weight: 600;">gldnrmz-clawmachine</h3>
+                <p style="color: var(--muted);">Claw machine to get goodies.</p>
+                <a href="https://github.com/GLDNRMZ/gldnrmz-clawmachine" style="color: var(--brand); text-decoration: underline; font-weight: 600;">View on GitHub</a>
+            </div>
+            <div style="flex: 1 1 200px; min-width: 200px; background: var(--elev); border-radius: var(--radius); box-shadow: 0 2px 8px rgba(10,15,28,0.15); padding: 1.2rem; margin-bottom: 1rem;">
+                <h3 style="color: var(--brand); font-size: 1.1rem; font-weight: 600;">gldnrmz-dumpsters</h3>
+                <p style="color: var(--muted);">Dumpster Diving and Trash Selling</p>
+                <a href="https://github.com/GLDNRMZ/gldnrmz-dumpsters" style="color: var(--brand); text-decoration: underline; font-weight: 600;">View on GitHub</a>
+            </div>
+            <div style="flex: 1 1 200px; min-width: 200px; background: var(--elev); border-radius: var(--radius); box-shadow: 0 2px 8px rgba(10,15,28,0.15); padding: 1.2rem; margin-bottom: 1rem;">
+                <h3 style="color: var(--brand); font-size: 1.1rem; font-weight: 600;">gldnrmz-elevators</h3>
+                <p style="color: var(--muted);">Elevators by job, item, id, or all</p>
+                <a href="https://github.com/GLDNRMZ/gldnrmz-elevators" style="color: var(--brand); text-decoration: underline; font-weight: 600;">View on GitHub</a>
+            </div>
+            <div style="flex: 1 1 200px; min-width: 200px; background: var(--elev); border-radius: var(--radius); box-shadow: 0 2px 8px rgba(10,15,28,0.15); padding: 1.2rem; margin-bottom: 1rem;">
+                <h3 style="color: var(--brand); font-size: 1.1rem; font-weight: 600;">gldnrmz-greenskeeper</h3>
+                <p style="color: var(--muted);">Clean up the golf course</p>
+                <a href="https://github.com/GLDNRMZ/gldnrmz-greenskeeper" style="color: var(--brand); text-decoration: underline; font-weight: 600;">View on GitHub</a>
+            </div>
+            <div style="flex: 1 1 200px; min-width: 200px; background: var(--elev); border-radius: var(--radius); box-shadow: 0 2px 8px rgba(10,15,28,0.15); padding: 1.2rem; margin-bottom: 1rem;">
+                <h3 style="color: var(--brand); font-size: 1.1rem; font-weight: 600;">gldnrmz-hookers</h3>
+                <p style="color: var(--muted);">100% stress relief</p>
+                <a href="https://github.com/GLDNRMZ/gldnrmz-hookers" style="color: var(--brand); text-decoration: underline; font-weight: 600;">View on GitHub</a>
+            </div>
+            <div style="flex: 1 1 200px; min-width: 200px; background: var(--elev); border-radius: var(--radius); box-shadow: 0 2px 8px rgba(10,15,28,0.15); padding: 1.2rem; margin-bottom: 1rem;">
+                <h3 style="color: var(--brand); font-size: 1.1rem; font-weight: 600;">gldnrmz-hostage</h3>
+                <p style="color: var(--muted);">Updated hostage taking</p>
+                <a href="https://github.com/GLDNRMZ/gldnrmz-hostage" style="color: var(--brand); text-decoration: underline; font-weight: 600;">View on GitHub</a>
+            </div>
+            <div style="flex: 1 1 200px; min-width: 200px; background: var(--elev); border-radius: var(--radius); box-shadow: 0 2px 8px rgba(10,15,28,0.15); padding: 1.2rem; margin-bottom: 1rem;">
+                <h3 style="color: var(--brand); font-size: 1.1rem; font-weight: 600;">gldnrmz-housekeeper</h3>
+                <p style="color: var(--muted);">Clean houses for money and items</p>
+                <a href="https://github.com/GLDNRMZ/gldnrmz-housekeeper" style="color: var(--brand); text-decoration: underline; font-weight: 600;">View on GitHub</a>
+            </div>
+            <div style="flex: 1 1 200px; min-width: 200px; background: var(--elev); border-radius: var(--radius); box-shadow: 0 2px 8px rgba(10,15,28,0.15); padding: 1.2rem; margin-bottom: 1rem;">
+                <h3 style="color: var(--brand); font-size: 1.1rem; font-weight: 600;">gldnrmz-openables</h3>
+                <p style="color: var(--muted);">Open any item and receive any set of items from the config.</p>
+                <a href="https://github.com/GLDNRMZ/gldnrmz-openables" style="color: var(--brand); text-decoration: underline; font-weight: 600;">View on GitHub</a>
+            </div>
+            <div style="flex: 1 1 200px; min-width: 200px; background: var(--elev); border-radius: var(--radius); box-shadow: 0 2px 8px rgba(10,15,28,0.15); padding: 1.2rem; margin-bottom: 1rem;">
+                <h3 style="color: var(--brand); font-size: 1.1rem; font-weight: 600;">gldnrmz-rat</h3>
+                <p style="color: var(--muted);">Bug this guy enough and he'll call the cops on you</p>
+                <a href="https://github.com/GLDNRMZ/gldnrmz-rat" style="color: var(--brand); text-decoration: underline; font-weight: 600;">View on GitHub</a>
+            </div>
+            <div style="flex: 1 1 200px; min-width: 200px; background: var(--elev); border-radius: var(--radius); box-shadow: 0 2px 8px rgba(10,15,28,0.15); padding: 1.2rem; margin-bottom: 1rem;">
+                <h3 style="color: var(--brand); font-size: 1.1rem; font-weight: 600;">gldnrmz-screenshot</h3>
+                <p style="color: var(--muted);">Screenshot player on a keypress.</p>
+                <a href="https://github.com/GLDNRMZ/gldnrmz-screenshot" style="color: var(--brand); text-decoration: underline; font-weight: 600;">View on GitHub</a>
+            </div>
+            <div style="flex: 1 1 200px; min-width: 200px; background: var(--elev); border-radius: var(--radius); box-shadow: 0 2px 8px rgba(10,15,28,0.15); padding: 1.2rem; margin-bottom: 1rem;">
+                <h3 style="color: var(--brand); font-size: 1.1rem; font-weight: 600;">gldnrmz-smallresources</h3>
+                <p style="color: var(--muted);">Collection of small resources</p>
+                <a href="https://github.com/GLDNRMZ/gldnrmz-smallresources" style="color: var(--brand); text-decoration: underline; font-weight: 600;">View on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ & Contact Section -->
+    <section style="max-width: 900px; margin: 0 auto 2rem auto; background: var(--panel); border-radius: var(--radius); box-shadow: var(--shadow); padding: 2rem;">
+        <h2>FAQ</h2>
+        <p style="color: var(--muted);">Frequently asked questions will go here.</p>
+        <h2 style="margin-top:2rem;">Contact</h2>
+        <p>Email: <a href="mailto:info@gldnrmz.com" style="color: var(--brand);">info@gldnrmz.com</a></p>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
