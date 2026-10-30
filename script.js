@@ -18,7 +18,7 @@
     revealEls.forEach(el => {
         const siblings = $$(':scope > .reveal', el.parentElement);
         const i = siblings.indexOf(el);
-        if (i > 0) el.style.setProperty('--delay', `${Math.min(i, 8) * 60}ms`);
+        if (i > 0) el.style.setProperty('--delay', `${Math.min(i, 6) * 40}ms`);
     });
     if ('IntersectionObserver' in window && !reduceMotion) {
         const io = new IntersectionObserver(entries => {

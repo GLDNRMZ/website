@@ -859,18 +859,19 @@ main { position: relative; }
 /* ---------- Reveal on scroll ---------- */
 .js .reveal {
     opacity: 0;
-    transform: translateY(28px);
-    filter: blur(6px);
-    transition: opacity .8s var(--ease), transform .8s var(--ease), filter .8s var(--ease);
+    transform: translateY(16px);
+    transition: opacity .5s var(--ease), transform .5s var(--ease);
     transition-delay: var(--delay, 0s);
 }
-.js .reveal.is-in { opacity: 1; transform: none; filter: none; }
+.js .reveal.is-in { opacity: 1; transform: none; }
+/* The top of the page is visible immediately, never animated in */
+.js .hero .reveal { opacity: 1; transform: none; transition: none; }
 /* Keep card hover snappy once revealed */
 .js .resource-card.reveal.is-in {
-    transition: opacity .8s var(--ease) var(--delay, 0s), filter .8s var(--ease) var(--delay, 0s), transform .35s var(--spring), border-color .25s var(--ease), box-shadow .3s var(--ease);
+    transition: opacity .5s var(--ease) var(--delay, 0s), transform .35s var(--spring), border-color .25s var(--ease), box-shadow .3s var(--ease);
 }
 .js .community-card.reveal.is-in {
-    transition: opacity .8s var(--ease) var(--delay, 0s), filter .8s var(--ease) var(--delay, 0s), transform .35s var(--spring), border-color .25s var(--ease);
+    transition: opacity .5s var(--ease) var(--delay, 0s), transform .35s var(--spring), border-color .25s var(--ease);
 }
 
 /* ---------- Reduced motion ---------- */
