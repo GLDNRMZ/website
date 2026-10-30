@@ -1,184 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500;600;700&display=swap" rel="stylesheet">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLDNRMZ Scripts</title>
+    <meta name="description" content="Fast, flexible, feature-rich FiveM scripts by GLDNRMZ. Free and open-source resources for QBCore, QBox and more.">
+    <meta name="theme-color" content="#0A0A0A">
+    <meta property="og:title" content="GLDNRMZ Scripts">
+    <meta property="og:description" content="Fast. Flexible. Feature-Rich. Elevate your FiveM server instantly.">
+    <meta property="og:image" content="https://gldnrmz.github.io/website/logo.png">
+    <meta property="og:url" content="https://gldnrmz.github.io/website/">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+    <script>document.documentElement.classList.add('js');</script>
+</head>
 <body>
-        <!-- Animated floating background gradient -->
-        <div class="animated-bg-gradient"></div>
-    <nav class="navbar" role="navigation" aria-label="Main Navigation">
-        <div class="navbar-logo">WELCOME</div>
-        <ul class="navbar-links">
-            <li><a href="#hero">Home</a></li>
-            <li><a href="https://github.com/gldnrmz" target="_blank" rel="noopener">GitHub</a></li>
-            <li><a href="https://discord.com/invite/7YHJ7774jA" target="_blank" rel="noopener">Discord</a></li>
-            <li><a href="https://forum.cfx.re/u/gldnrmz/summary" target="_blank" rel="noopener">Cfx.re</a></li>
-        </ul>
-    </nav>
+    <a class="skip-link" href="#scripts">Skip to scripts</a>
 
-    <!-- Jumbotron / Callout Section -->
-    <div class="container-fluid callout-container main-container" style="padding:0;">
-        <div style="position:relative; border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow);">
-            <div class="opaque-overlay" style="position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(120deg, var(--brand-25) 60%, var(--panel) 100%);z-index:1;">&nbsp;</div>
-            <section class="callout jumbotron" style="position:relative;z-index:2;padding:3rem 2rem 2rem 2rem;background:transparent;">
-                <div style="display:flex;align-items:center;justify-content:center;gap:2.5rem;flex-wrap:wrap;padding-top:0.5rem;">
-                    <div style="flex:1 1 350px;min-width:220px;text-align:left;">
-                        <h1 class="jumbotron-header" style="color:#fff;font-size:2.8rem;font-weight:700;margin-bottom:0.5rem;"><i class="fas fa-code" style="margin-right:0.5rem;"></i>GLDNRMZ SCRIPTS</h1>
-                        <hr class="block-divider block-divider--brand" style="border-top:3px solid var(--brand);width:80px;margin:24px 0;">
-                        <p class="lead" style="font-size:1.2rem;color:var(--muted);margin-bottom:1.5rem;">Fast. Flexible. Feature-Rich.<br>
-                            <span class="d-inline d-sm-none"><br></span>
-                            <strong style="color:var(--brand-muted);">Elevate Your FiveM Server Instantly</strong></p>
-                    </div>
-                    <div style="flex:0 0 220px;display:flex;align-items:center;justify-content:center;">
-                        <img src="logo.png" alt="GLDNRMZ Logo" style="max-width:125px;width:32vw;height:auto;filter:drop-shadow(0 2px 8px rgba(0,0,0,0.25));margin:0;">
-                    </div>
-                </div>
-            </section>
-        </div>
+    <!-- Background layers -->
+    <div class="bg" aria-hidden="true">
+        <div class="bg-orb bg-orb--a"></div>
+        <div class="bg-orb bg-orb--b"></div>
+        <div class="bg-orb bg-orb--c"></div>
+        <div class="bg-grid"></div>
+        <div class="bg-grain"></div>
     </div>
+    <div class="scroll-progress" aria-hidden="true"></div>
 
-    <!-- Information Section -->
-    <div class="container-wrapper main-container">
-        <div class="container quotes-container content-container" style="background:var(--panel);border-radius:var(--radius);box-shadow:var(--shadow);padding:2rem;">
-            <section class="quotes">
-                <div class="row" style="display:flex;flex-wrap:wrap;">
-                    <div class="col-12 page-header" style="width:100%;">
-                        <h2 class="text-uppercase" style="color:var(--brand);font-weight:700;">INFORMATION:</h2>
-                        <hr class="block-divider block-divider--short" style="border-top:2px solid var(--brand);width:60px;margin:16px 0;">
-                    </div>
-                </div>
-                <div class="row" style="display:flex;flex-wrap:wrap;gap:2rem;">
-                    <div class="col-12 col-md-6" style="flex:1 1 300px;min-width:260px;">
-                        <div class="media" style="background:var(--elev);border-radius:var(--radius);padding:1.2rem;box-shadow:0 2px 8px rgba(10,15,28,0.15);">
-                            <div class="media-body">
-                                <blockquote class="blockquote" style="margin:0;">
-                                    <p><i class="fas fa-circle-question" style="color:var(--brand);margin-right:0.4em;"></i><b> Do you only make scripts for QBCore/QBox?</b></p>
-                                    <p>While I primarily develop and test my scripts using QBCore and QBox, I’ve been actively working toward making all of my projects fully framework-agnostic. Through the use of <a href="https://github.com/TheOrderFivem/community_bridge" target="_blank" rel="noopener noreferrer">community_bridge</a>, I’m converting my systems to be compatible across multiple frameworks, inventories, targeting systems, and banking solutions. My long-term goal is to ensure that every release is flexible, scalable, and easy to integrate into any server environment—without forcing owners to restructure their entire setup.</p>
-                                </blockquote>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6" style="flex:1 1 300px;min-width:260px;">
-                        <div class="media" style="background:var(--elev);border-radius:var(--radius);padding:1.2rem;box-shadow:0 2px 8px rgba(10,15,28,0.15);">
-                            <div class="media-body">
-                                <blockquote class="blockquote" style="margin:0;">
-                                    <p><i class="fas fa-money-bill-wave" style="color:var(--brand);margin-right:0.4em;"></i><b> Are all your scripts free?</b></p>
-                                    <p>While I currently have plenty of projects that are completely free and open-source, most of what I’m building right now is part of my experimentation and learning process. Script development is something I genuinely enjoy as a hobby in my spare time, and it allows me to explore new ideas without pressure. I do have a few paid scripts in development, but I plan to focus on selling once I’m confident I can consistently deliver bigger, better, and more polished releases.</p>
-                                </blockquote>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </div>
+    <!-- Navigation -->
+    <header class="nav-wrap">
+        <nav class="nav" aria-label="Main navigation">
+            <a class="nav-brand" href="#hero" aria-label="GLDNRMZ home">
+                <img src="logo.png" alt="" width="28" height="28">
+                <span>GLDNRMZ</span>
+            </a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open navigation menu">
+                <span></span><span></span>
+            </button>
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="#hero" data-section>Home</a></li>
+                <li><a href="#scripts" data-section>Scripts</a></li>
+                <li><a href="#info" data-section>Info</a></li>
+                <li><a href="#community" data-section>Community</a></li>
+                <li class="nav-sep" aria-hidden="true"></li>
+                <li><a href="https://github.com/gldnrmz" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i><span class="nav-label">GitHub</span></a></li>
+                <li><a href="https://discord.com/invite/7YHJ7774jA" target="_blank" rel="noopener" aria-label="Discord"><i class="fab fa-discord"></i><span class="nav-label">Discord</span></a></li>
+                <li><a href="https://forum.cfx.re/u/gldnrmz/summary" target="_blank" rel="noopener" aria-label="Cfx.re"><img class="cfx-icon" src="https://avatars.githubusercontent.com/u/25160833?s=64&v=4" alt=""><span class="nav-label">Cfx.re</span></a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Features Section -->
-    <div class="container-wrapper container-wrapper--brand main-container">
-        <div class="container features-container content-container" style="padding:0;">
-            <section class="features">
-                <div class="row" style="display:flex;flex-wrap:wrap;">
-                    <div class="col-12 page-header" style="width:100%;">
-                        <h2 class="text-uppercase" style="color:var(--brand);font-weight:700;"><b>Check out more from GLDNRMZ:</b></h2>
-                        <hr class="block-divider block-divider--short block-divider--brand" style="border-top:2px solid var(--brand);width:60px;margin:16px 0;">
-                    </div>
+    <main>
+        <!-- Hero -->
+        <section class="hero" id="hero">
+            <div class="hero-copy">
+                <p class="eyebrow reveal"><span class="pulse"></span>FiveM resources · open source</p>
+                <h1 class="hero-title reveal">
+                    <span class="hero-title-line">GLDNRMZ</span>
+                    <span class="hero-title-line gold-text">SCRIPTS</span>
+                </h1>
+                <p class="hero-lead reveal">Fast. Flexible. Feature-Rich.<br><strong>Elevate Your FiveM Server Instantly.</strong></p>
+                <div class="hero-cta reveal">
+                    <a class="btn btn--primary" href="#scripts"><i class="fas fa-code"></i> Browse scripts</a>
+                    <a class="btn btn--ghost" href="https://discord.com/invite/7YHJ7774jA" target="_blank" rel="noopener"><i class="fab fa-discord"></i> Join the Discord</a>
                 </div>
-                <div class="row" style="display:flex;flex-wrap:wrap;gap:2rem;justify-content:space-between;">
-                    <div class="col-12 col-md-6 col-lg-4" style="flex:1 1 260px;min-width:220px;">
-                        <div class="feature" style="background:var(--panel);border-radius:var(--radius);box-shadow:var(--shadow);padding:1.5rem;text-align:center;margin-bottom:1rem;">
-                            <h3 style="color:var(--brand);font-size:1.2rem;font-weight:600;">
-                                <i class="fab fa-github" style="margin-right:0.4em;"></i>
-                                <a href="https://github.com/gldnrmz" target="_blank" rel="noopener" style="color:var(--brand);text-decoration:none;font-weight:600;">GitHub Releases</a>
-                            </h3>
-                            <p style="color:var(--muted);">Browse and download the latest open-source scripts. Report issues or request features on GitHub.</p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4" style="flex:1 1 260px;min-width:220px;">
-                        <div class="feature" style="background:var(--panel);border-radius:var(--radius);box-shadow:var(--shadow);padding:1.5rem;text-align:center;margin-bottom:1rem;">
-                            <h3 style="color:var(--brand);font-size:1.2rem;font-weight:600;">
-                                <i class="fab fa-discord" style="margin-right:0.4em;"></i>
-                                <a href="https://discord.com/invite/7YHJ7774jA" target="_blank" rel="noopener" style="color:var(--brand);text-decoration:none;font-weight:600;">Community Discord</a>
-                            </h3>
-                            <p style="color:var(--muted);">Join the Discord server for support, updates, and to connect with other FiveM enthusiasts.</p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4" style="flex:1 1 260px;min-width:220px;">
-                        <div class="feature" style="background:var(--panel);border-radius:var(--radius);box-shadow:var(--shadow);padding:1.5rem;text-align:center;margin-bottom:1rem;">
-                            <h3 style="color:var(--brand);font-size:1.2rem;font-weight:600;">
-                                <img src="https://avatars.githubusercontent.com/u/25160833?s=200&v=4" alt="Cfx.re Logo" class="cfx-icon" style="margin-right:0.4em;vertical-align:middle;" />
-                                <a href="https://forum.cfx.re/u/gldnrmz/summary" target="_blank" rel="noopener" style="color:var(--brand);text-decoration:none;font-weight:600;">Cfx.re Profile</a>
-                            </h3>
-                            <p style="color:var(--muted);">View my official Cfx.re forum profile for updates, releases, and community activity.</p>
-                        </div>
-                    </div>
+                <ul class="hero-stats reveal">
+                    <li><b data-count-target="resources">13</b><span>Free resources</span></li>
+                    <li><b>100%</b><span>Open source</span></li>
+                    <li><b><i class="fas fa-layer-group"></i></b><span>Framework-agnostic</span></li>
+                </ul>
+            </div>
+            <div class="hero-visual reveal" aria-hidden="true">
+                <div class="logo-stage" data-tilt>
+                    <div class="logo-ring logo-ring--1"></div>
+                    <div class="logo-ring logo-ring--2"></div>
+                    <div class="logo-glow"></div>
+                    <img src="logo.png" alt="" class="logo-img">
+                    <div class="logo-chip logo-chip--a"><i class="fas fa-bolt"></i> Optimized</div>
+                    <div class="logo-chip logo-chip--b"><i class="fas fa-sliders"></i> Configurable</div>
+                    <div class="logo-chip logo-chip--c"><i class="fas fa-code-branch"></i> Open source</div>
                 </div>
-            </section>
-        </div>
-    </div>
+            </div>
+        </section>
 
-    <!-- Resources Section -->
-    <section class="main-container" style="background: var(--panel); border-radius: var(--radius); box-shadow: var(--shadow); padding: 1.2rem 0.5rem;">
-        <h2>Featured Free Resources</h2>
-        <div class="resources-grid" style="gap: 1.1rem 1.1rem;">
-            <div class="resource-card" tabindex="0" role="link" aria-label="gldnrmz-aidoc" data-href="https://github.com/GLDNRMZ/gldnrmz-aidoc" style="padding: 1rem 1.1rem; margin: 0; min-height: unset;">
-                <h3 style="color: var(--brand); font-size: 1.05rem; font-weight: 600; margin-bottom: 0.5rem;"><i class="fas fa-code-branch" style="margin-right:0.4em;"></i><a href="https://github.com/GLDNRMZ/gldnrmz-aidoc" target="_blank" rel="noopener" style="color: var(--brand); text-decoration: none;">gldnrmz-aidoc</a></h3>
-                <p style="color: var(--muted); margin-bottom: 0;">Call an AI-Medic to revive you if no EMS is on-duty</p>
-            </div>
-            <div class="resource-card" tabindex="0" role="link" aria-label="gldnrmz-buyers" data-href="https://github.com/GLDNRMZ/gldnrmz-buyers" style="padding: 1rem 1.1rem; margin: 0; min-height: unset;">
-                <h3 style="color: var(--brand); font-size: 1.05rem; font-weight: 600; margin-bottom: 0.5rem;"><i class="fas fa-code-branch" style="margin-right:0.4em;"></i><a href="https://github.com/GLDNRMZ/gldnrmz-buyers" target="_blank" rel="noopener" style="color: var(--brand); text-decoration: none;">gldnrmz-buyers</a></h3>
-                <p style="color: var(--muted); margin-bottom: 0;">Advanced item buyers.</p>
-            </div>
-            <div class="resource-card" tabindex="0" role="link" aria-label="gldnrmz-clawmachine" data-href="https://github.com/GLDNRMZ/gldnrmz-clawmachine" style="padding: 1rem 1.1rem; margin: 0; min-height: unset;">
-                <h3 style="color: var(--brand); font-size: 1.05rem; font-weight: 600; margin-bottom: 0.5rem;"><i class="fas fa-code-branch" style="margin-right:0.4em;"></i><a href="https://github.com/GLDNRMZ/gldnrmz-clawmachine" target="_blank" rel="noopener" style="color: var(--brand); text-decoration: none;">gldnrmz-clawmachine</a></h3>
-                <p style="color: var(--muted); margin-bottom: 0;">Claw machine to get goodies.</p>
-            </div>
-            <div class="resource-card" tabindex="0" role="link" aria-label="gldnrmz-dumpsters" data-href="https://github.com/GLDNRMZ/gldnrmz-dumpsters" style="padding: 1rem 1.1rem; margin: 0; min-height: unset;">
-                <h3 style="color: var(--brand); font-size: 1.05rem; font-weight: 600; margin-bottom: 0.5rem;"><i class="fas fa-code-branch" style="margin-right:0.4em;"></i><a href="https://github.com/GLDNRMZ/gldnrmz-dumpsters" target="_blank" rel="noopener" style="color: var(--brand); text-decoration: none;">gldnrmz-dumpsters</a></h3>
-                <p style="color: var(--muted); margin-bottom: 0;">Dumpster Diving and Trash Selling</p>
-            </div>
-            <div class="resource-card" tabindex="0" role="link" aria-label="gldnrmz-elevators" data-href="https://github.com/GLDNRMZ/gldnrmz-elevators" style="padding: 1rem 1.1rem; margin: 0; min-height: unset;">
-                <h3 style="color: var(--brand); font-size: 1.05rem; font-weight: 600; margin-bottom: 0.5rem;"><i class="fas fa-code-branch" style="margin-right:0.4em;"></i><a href="https://github.com/GLDNRMZ/gldnrmz-elevators" target="_blank" rel="noopener" style="color: var(--brand); text-decoration: none;">gldnrmz-elevators</a></h3>
-                <p style="color: var(--muted); margin-bottom: 0;">Elevators by job, item, id, or all</p>
-            </div>
-            <div class="resource-card" tabindex="0" role="link" aria-label="gldnrmz-greenskeeper" data-href="https://github.com/GLDNRMZ/gldnrmz-greenskeeper" style="padding: 1rem 1.1rem; margin: 0; min-height: unset;">
-                <h3 style="color: var(--brand); font-size: 1.05rem; font-weight: 600; margin-bottom: 0.5rem;"><i class="fas fa-code-branch" style="margin-right:0.4em;"></i><a href="https://github.com/GLDNRMZ/gldnrmz-greenskeeper" target="_blank" rel="noopener" style="color: var(--brand); text-decoration: none;">gldnrmz-greenskeeper</a></h3>
-                <p style="color: var(--muted); margin-bottom: 0;">Clean up the golf course</p>
-            </div>
-            <div class="resource-card" tabindex="0" role="link" aria-label="gldnrmz-hookers" data-href="https://github.com/GLDNRMZ/gldnrmz-hookers" style="padding: 1rem 1.1rem; margin: 0; min-height: unset;">
-                <h3 style="color: var(--brand); font-size: 1.05rem; font-weight: 600; margin-bottom: 0.5rem;"><i class="fas fa-code-branch" style="margin-right:0.4em;"></i><a href="https://github.com/GLDNRMZ/gldnrmz-hookers" target="_blank" rel="noopener" style="color: var(--brand); text-decoration: none;">gldnrmz-hookers</a></h3>
-                <p style="color: var(--muted); margin-bottom: 0;">100% stress relief</p>
-            </div>
-            <div class="resource-card" tabindex="0" role="link" aria-label="gldnrmz-hostage" data-href="https://github.com/GLDNRMZ/gldnrmz-hostage" style="padding: 1rem 1.1rem; margin: 0; min-height: unset;">
-                <h3 style="color: var(--brand); font-size: 1.05rem; font-weight: 600; margin-bottom: 0.5rem;"><i class="fas fa-code-branch" style="margin-right:0.4em;"></i><a href="https://github.com/GLDNRMZ/gldnrmz-hostage" target="_blank" rel="noopener" style="color: var(--brand); text-decoration: none;">gldnrmz-hostage</a></h3>
-                <p style="color: var(--muted); margin-bottom: 0;">Updated hostage taking</p>
-            </div>
-            <div class="resource-card" tabindex="0" role="link" aria-label="gldnrmz-housekeeper" data-href="https://github.com/GLDNRMZ/gldnrmz-housekeeper" style="padding: 1rem 1.1rem; margin: 0; min-height: unset;">
-                <h3 style="color: var(--brand); font-size: 1.05rem; font-weight: 600; margin-bottom: 0.5rem;"><i class="fas fa-code-branch" style="margin-right:0.4em;"></i><a href="https://github.com/GLDNRMZ/gldnrmz-housekeeper" target="_blank" rel="noopener" style="color: var(--brand); text-decoration: none;">gldnrmz-housekeeper</a></h3>
-                <p style="color: var(--muted); margin-bottom: 0;">Clean houses for money and items</p>
-            </div>
-            <div class="resource-card" tabindex="0" role="link" aria-label="gldnrmz-openables" data-href="https://github.com/GLDNRMZ/gldnrmz-openables" style="padding: 1rem 1.1rem; margin: 0; min-height: unset;">
-                <h3 style="color: var(--brand); font-size: 1.05rem; font-weight: 600; margin-bottom: 0.5rem;"><i class="fas fa-code-branch" style="margin-right:0.4em;"></i><a href="https://github.com/GLDNRMZ/gldnrmz-openables" target="_blank" rel="noopener" style="color: var(--brand); text-decoration: none;">gldnrmz-openables</a></h3>
-                <p style="color: var(--muted); margin-bottom: 0;">Open any item and receive any set of items from the config.</p>
-            </div>
-            <div class="resource-card" tabindex="0" role="link" aria-label="gldnrmz-rat" data-href="https://github.com/GLDNRMZ/gldnrmz-rat" style="padding: 1rem 1.1rem; margin: 0; min-height: unset;">
-                <h3 style="color: var(--brand); font-size: 1.05rem; font-weight: 600; margin-bottom: 0.5rem;"><i class="fas fa-code-branch" style="margin-right:0.4em;"></i><a href="https://github.com/GLDNRMZ/gldnrmz-rat" target="_blank" rel="noopener" style="color: var(--brand); text-decoration: none;">gldnrmz-rat</a></h3>
-                <p style="color: var(--muted); margin-bottom: 0;">Bug this guy enough and he'll call the cops on you</p>
-            </div>
-            <div class="resource-card" tabindex="0" role="link" aria-label="gldnrmz-screenshot" data-href="https://github.com/GLDNRMZ/gldnrmz-screenshot" style="padding: 1rem 1.1rem; margin: 0; min-height: unset;">
-                <h3 style="color: var(--brand); font-size: 1.05rem; font-weight: 600; margin-bottom: 0.5rem;"><i class="fas fa-code-branch" style="margin-right:0.4em;"></i><a href="https://github.com/GLDNRMZ/gldnrmz-screenshot" target="_blank" rel="noopener" style="color: var(--brand); text-decoration: none;">gldnrmz-screenshot</a></h3>
-                <p style="color: var(--muted); margin-bottom: 0;">Screenshot player on a keypress.</p>
-            </div>
-            <div class="resource-card" tabindex="0" role="link" aria-label="gldnrmz-smallresources" data-href="https://github.com/GLDNRMZ/gldnrmz-smallresources" style="padding: 1rem 1.1rem; margin: 0; min-height: unset;">
-                <h3 style="color: var(--brand); font-size: 1.05rem; font-weight: 600; margin-bottom: 0.5rem;"><i class="fas fa-code-branch" style="margin-right:0.4em;"></i><a href="https://github.com/GLDNRMZ/gldnrmz-smallresources" target="_blank" rel="noopener" style="color: var(--brand); text-decoration: none;">gldnrmz-smallresources</a></h3>
-                <p style="color: var(--muted); margin-bottom: 0;">Collection of small resources</p>
+        <!-- Marquee -->
+        <div class="marquee" aria-hidden="true">
+            <div class="marquee-track">
+                <span>aidoc</span><span>buyers</span><span>clawmachine</span><span>dumpsters</span><span>elevators</span><span>greenskeeper</span><span>hookers</span><span>hostage</span><span>housekeeper</span><span>openables</span><span>rat</span><span>screenshot</span><span>smallresources</span>
+                <span>aidoc</span><span>buyers</span><span>clawmachine</span><span>dumpsters</span><span>elevators</span><span>greenskeeper</span><span>hookers</span><span>hostage</span><span>housekeeper</span><span>openables</span><span>rat</span><span>screenshot</span><span>smallresources</span>
             </div>
         </div>
-    </section>
-    
 
+        <!-- Scripts -->
+        <section class="section" id="scripts">
+            <div class="section-head reveal">
+                <div>
+                    <p class="kicker">01 — Featured</p>
+                    <h2>Free resources</h2>
+                    <p class="section-sub">Drop-in scripts for your server. Click any card to open it on GitHub.</p>
+                </div>
+                <label class="search">
+                    <i class="fas fa-magnifying-glass" aria-hidden="true"></i>
+                    <input type="search" id="resource-search" placeholder="Search scripts…" autocomplete="off" aria-label="Search scripts">
+                    <kbd>/</kbd>
+                </label>
+            </div>
+
+            <div class="resources-grid" id="resources-grid">
+                <a class="resource-card reveal" href="https://github.com/GLDNRMZ/gldnrmz-aidoc" target="_blank" rel="noopener">
+                    <span class="rc-icon"><i class="fas fa-kit-medical"></i></span>
+                    <h3>gldnrmz-aidoc</h3>
+                    <p>Call an AI-Medic to revive you if no EMS is on-duty.</p>
+                    <span class="rc-foot"><i class="fab fa-github"></i> View repo <i class="fas fa-arrow-right rc-arrow"></i></span>
+                </a>
+                <a class="resource-card reveal" href="https://github.com/GLDNRMZ/gldnrmz-buyers" target="_blank" rel="noopener">
+                    <span class="rc-icon"><i class="fas fa-handshake"></i></span>
+                    <h3>gldnrmz-buyers</h3>
+                    <p>Advanced item buyers.</p>
+                    <span class="rc-foot"><i class="fab fa-github"></i> View repo <i class="fas fa-arrow-right rc-arrow"></i></span>
+                </a>
+                <a class="resource-card reveal" href="https://github.com/GLDNRMZ/gldnrmz-clawmachine" target="_blank" rel="noopener">
+                    <span class="rc-icon"><i class="fas fa-gamepad"></i></span>
+                    <h3>gldnrmz-clawmachine</h3>
+                    <p>Claw machine to get goodies.</p>
+                    <span class="rc-foot"><i class="fab fa-github"></i> View repo <i class="fas fa-arrow-right rc-arrow"></i></span>
+                </a>
+                <a class="resource-card reveal" href="https://github.com/GLDNRMZ/gldnrmz-dumpsters" target="_blank" rel="noopener">
+                    <span class="rc-icon"><i class="fas fa-dumpster"></i></span>
+                    <h3>gldnrmz-dumpsters</h3>
+                    <p>Dumpster diving and trash selling.</p>
+                    <span class="rc-foot"><i class="fab fa-github"></i> View repo <i class="fas fa-arrow-right rc-arrow"></i></span>
+                </a>
+                <a class="resource-card reveal" href="https://github.com/GLDNRMZ/gldnrmz-elevators" target="_blank" rel="noopener">
+                    <span class="rc-icon"><i class="fas fa-elevator"></i></span>
+                    <h3>gldnrmz-elevators</h3>
+                    <p>Elevators by job, item, id, or all.</p>
+                    <span class="rc-foot"><i class="fab fa-github"></i> View repo <i class="fas fa-arrow-right rc-arrow"></i></span>
+                </a>
+                <a class="resource-card reveal" href="https://github.com/GLDNRMZ/gldnrmz-greenskeeper" target="_blank" rel="noopener">
+                    <span class="rc-icon"><i class="fas fa-golf-ball-tee"></i></span>
+                    <h3>gldnrmz-greenskeeper</h3>
+                    <p>Clean up the golf course.</p>
+                    <span class="rc-foot"><i class="fab fa-github"></i> View repo <i class="fas fa-arrow-right rc-arrow"></i></span>
+                </a>
+                <a class="resource-card reveal" href="https://github.com/GLDNRMZ/gldnrmz-hookers" target="_blank" rel="noopener">
+                    <span class="rc-icon"><i class="fas fa-heart"></i></span>
+                    <h3>gldnrmz-hookers</h3>
+                    <p>100% stress relief.</p>
+                    <span class="rc-foot"><i class="fab fa-github"></i> View repo <i class="fas fa-arrow-right rc-arrow"></i></span>
+                </a>
+                <a class="resource-card reveal" href="https://github.com/GLDNRMZ/gldnrmz-hostage" target="_blank" rel="noopener">
+                    <span class="rc-icon"><i class="fas fa-user-lock"></i></span>
+                    <h3>gldnrmz-hostage</h3>
+                    <p>Updated hostage taking.</p>
+                    <span class="rc-foot"><i class="fab fa-github"></i> View repo <i class="fas fa-arrow-right rc-arrow"></i></span>
+                </a>
+                <a class="resource-card reveal" href="https://github.com/GLDNRMZ/gldnrmz-housekeeper" target="_blank" rel="noopener">
+                    <span class="rc-icon"><i class="fas fa-broom"></i></span>
+                    <h3>gldnrmz-housekeeper</h3>
+                    <p>Clean houses for money and items.</p>
+                    <span class="rc-foot"><i class="fab fa-github"></i> View repo <i class="fas fa-arrow-right rc-arrow"></i></span>
+                </a>
+                <a class="resource-card reveal" href="https://github.com/GLDNRMZ/gldnrmz-openables" target="_blank" rel="noopener">
+                    <span class="rc-icon"><i class="fas fa-box-open"></i></span>
+                    <h3>gldnrmz-openables</h3>
+                    <p>Open any item and receive any set of items from the config.</p>
+                    <span class="rc-foot"><i class="fab fa-github"></i> View repo <i class="fas fa-arrow-right rc-arrow"></i></span>
+                </a>
+                <a class="resource-card reveal" href="https://github.com/GLDNRMZ/gldnrmz-rat" target="_blank" rel="noopener">
+                    <span class="rc-icon"><i class="fas fa-user-secret"></i></span>
+                    <h3>gldnrmz-rat</h3>
+                    <p>Bug this guy enough and he'll call the cops on you.</p>
+                    <span class="rc-foot"><i class="fab fa-github"></i> View repo <i class="fas fa-arrow-right rc-arrow"></i></span>
+                </a>
+                <a class="resource-card reveal" href="https://github.com/GLDNRMZ/gldnrmz-screenshot" target="_blank" rel="noopener">
+                    <span class="rc-icon"><i class="fas fa-camera"></i></span>
+                    <h3>gldnrmz-screenshot</h3>
+                    <p>Screenshot player on a keypress.</p>
+                    <span class="rc-foot"><i class="fab fa-github"></i> View repo <i class="fas fa-arrow-right rc-arrow"></i></span>
+                </a>
+                <a class="resource-card reveal" href="https://github.com/GLDNRMZ/gldnrmz-smallresources" target="_blank" rel="noopener">
+                    <span class="rc-icon"><i class="fas fa-cubes"></i></span>
+                    <h3>gldnrmz-smallresources</h3>
+                    <p>Collection of small resources.</p>
+                    <span class="rc-foot"><i class="fab fa-github"></i> View repo <i class="fas fa-arrow-right rc-arrow"></i></span>
+                </a>
+                <a class="more-card reveal" href="https://github.com/gldnrmz?tab=repositories" target="_blank" rel="noopener">
+                    <i class="fab fa-github"></i>
+                    <span>
+                        <strong>See every repo</strong>
+                        <small>New scripts land on GitHub first.</small>
+                    </span>
+                    <i class="fas fa-arrow-right more-arrow"></i>
+                </a>
+            </div>
+            <p class="empty-state" id="empty-state" hidden><i class="fas fa-ghost"></i> No scripts match “<span id="empty-query"></span>”.</p>
+        </section>
+
+        <!-- Information -->
+        <section class="section" id="info">
+            <div class="section-head reveal">
+                <div>
+                    <p class="kicker">02 — Information</p>
+                    <h2>Good to know</h2>
+                </div>
+            </div>
+            <div class="info-grid">
+                <article class="info-card reveal">
+                    <span class="info-icon"><i class="fas fa-circle-question"></i></span>
+                    <h3>Do you only make scripts for QBCore/QBox?</h3>
+                    <p>While I primarily develop and test my scripts using QBCore and QBox, I’ve been actively working toward making all of my projects fully framework-agnostic. Through the use of <a href="https://github.com/TheOrderFivem/community_bridge" target="_blank" rel="noopener noreferrer">community_bridge</a>, I’m converting my systems to be compatible across multiple frameworks, inventories, targeting systems, and banking solutions. My long-term goal is to ensure that every release is flexible, scalable, and easy to integrate into any server environment—without forcing owners to restructure their entire setup.</p>
+                    <ul class="tags">
+                        <li>QBCore</li><li>QBox</li><li>community_bridge</li>
+                    </ul>
+                </article>
+                <article class="info-card reveal">
+                    <span class="info-icon"><i class="fas fa-money-bill-wave"></i></span>
+                    <h3>Are all your scripts free?</h3>
+                    <p>While I currently have plenty of projects that are completely free and open-source, most of what I’m building right now is part of my experimentation and learning process. Script development is something I genuinely enjoy as a hobby in my spare time, and it allows me to explore new ideas without pressure. I do have a few paid scripts in development, but I plan to focus on selling once I’m confident I can consistently deliver bigger, better, and more polished releases.</p>
+                    <ul class="tags">
+                        <li>Free &amp; open source</li><li>Paid scripts in development</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- Community -->
+        <section class="section" id="community">
+            <div class="section-head reveal">
+                <div>
+                    <p class="kicker">03 — Community</p>
+                    <h2>Check out more from GLDNRMZ</h2>
+                </div>
+            </div>
+            <div class="community-grid">
+                <a class="community-card community-card--github reveal" href="https://github.com/gldnrmz" target="_blank" rel="noopener">
+                    <span class="cc-icon"><i class="fab fa-github"></i></span>
+                    <h3>GitHub Releases</h3>
+                    <p>Browse and download the latest open-source scripts. Report issues or request features on GitHub.</p>
+                    <span class="cc-cta">Open GitHub <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a class="community-card community-card--discord reveal" href="https://discord.com/invite/7YHJ7774jA" target="_blank" rel="noopener">
+                    <span class="cc-icon"><i class="fab fa-discord"></i></span>
+                    <h3>Community Discord</h3>
+                    <p>Join the Discord server for support, updates, and to connect with other FiveM enthusiasts.</p>
+                    <span class="cc-cta">Join server <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a class="community-card community-card--cfx reveal" href="https://forum.cfx.re/u/gldnrmz/summary" target="_blank" rel="noopener">
+                    <span class="cc-icon"><img src="https://avatars.githubusercontent.com/u/25160833?s=96&v=4" alt=""></span>
+                    <h3>Cfx.re Profile</h3>
+                    <p>View my official Cfx.re forum profile for updates, releases, and community activity.</p>
+                    <span class="cc-cta">View profile <i class="fas fa-arrow-right"></i></span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <a class="nav-brand" href="#hero">
+                <img src="logo.png" alt="" width="28" height="28">
+                <span>GLDNRMZ</span>
+            </a>
+            <p>© <span id="year">2026</span> GLDNRMZ · Built for the FiveM community.</p>
+            <div class="footer-social">
+                <a href="https://github.com/gldnrmz" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://discord.com/invite/7YHJ7774jA" target="_blank" rel="noopener" aria-label="Discord"><i class="fab fa-discord"></i></a>
+                <a href="https://forum.cfx.re/u/gldnrmz/summary" target="_blank" rel="noopener" aria-label="Cfx.re"><img class="cfx-icon" src="https://avatars.githubusercontent.com/u/25160833?s=64&v=4" alt=""></a>
+            </div>
+        </div>
+    </footer>
+
+    <button class="to-top" id="to-top" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
